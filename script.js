@@ -1,4 +1,5 @@
 const textBox = document.getElementById('animeQuote');
+const animeName = document.getElementById('animeName');
 let returnedQuote = [];
 
 // Anime quotes apiURL = https://animechan.vercel.app/guide#random-quote
@@ -10,6 +11,7 @@ let getQuoteData = async function getQuote() {
        returnedQuote = await response.json();
        console.log(returnedQuote);
        textBox.textContent = returnedQuote.quote;
+       animeName.textContent = returnedQuote.anime;
     } catch (error) {
         console.log("Caught Error at getQuote method", error);
     }

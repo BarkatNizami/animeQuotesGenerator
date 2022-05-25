@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anime Quote Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Textbox to display quote -->
-    <textarea name="quote" id="animeQuote" cols="30" rows="10">Quote needs to be generated</textarea>
+    
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <div id="Quote-text">
+            <span id="animeQuote">Quote is being generated</span>
+        </div>
+        <!-- Anime Name -->
+        <div class="animeName">
+            <span id="animeName">Anime Name</span>
+        </div>
+        <!-- New Quote Button -->
+        <div>
+            <button id="newQuoteBtn" title="Generate a new quote">Get Quote </button>
+        </div>
+    </div>
+    
+    
     <!-- Script -->
     <script src="script.js"></script>
 </body>
