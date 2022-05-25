@@ -5,6 +5,7 @@ let returnedQuote = [];
 
 // Anime quotes apiURL = https://animechan.vercel.app/guide#random-quote
 
+// Function to generate random quotes from API
 let getQuoteData = async function getQuote() {
     const apiUrl = 'https://animechan.vercel.app/api/random';
     try {
@@ -20,9 +21,6 @@ let getQuoteData = async function getQuote() {
 
 // Generating a quote when button is clicked
 getQuoteBtn.addEventListener('click', getQuoteData);
-
-
-//textBox.innerHTML = getQuoteData();
 
 // On Load
 getQuoteData();

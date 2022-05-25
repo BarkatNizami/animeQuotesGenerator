@@ -17,6 +17,12 @@ body {
 }
 
 #quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow:0 10px 10px 10px rgba(0, 0, 0, 0.2);
     font-family: 'Otomanopee One', sans-serif;
     font-size: large;
     /* display: flex; */
@@ -25,6 +31,29 @@ body {
 }
 
 #newQuoteBtn {
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    outline: none;
     font-family: 'Otomanopee One', sans-serif;
     font-size: large;
+    color: black;
+    background-color: grey;
+    padding: 0.8rem 1.5rem;
+}
+
+#newQuoteBtn:hover {
+    filter:brightness(115%);
+}
+
+#newQuoteBtn:active {
+    transform: translateY(0.3rem);
+}
+
+/* Media Query */
+@media only screen and (max-width: 900px) {
+    #quote-container {
+        margin: 0 10px;
+    }
 }
