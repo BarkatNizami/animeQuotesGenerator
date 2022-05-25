@@ -1,5 +1,6 @@
 const textBox = document.getElementById('animeQuote');
 const animeName = document.getElementById('animeName');
+const getQuoteBtn = document.getElementById('newQuoteBtn');
 let returnedQuote = [];
 
 // Anime quotes apiURL = https://animechan.vercel.app/guide#random-quote
@@ -16,6 +17,12 @@ let getQuoteData = async function getQuote() {
         console.log("Caught Error at getQuote method", error);
     }
 } 
+
+// Generating a quote when button is clicked
+getQuoteBtn.addEventListener('click', () =>{
+    console.log("Click is working");
+    getQuoteData();
+});
 
 
 //textBox.innerHTML = getQuoteData();
