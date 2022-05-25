@@ -19,10 +19,7 @@ let getQuoteData = async function getQuote() {
 } 
 
 // Generating a quote when button is clicked
-getQuoteBtn.addEventListener('click', () =>{
-    console.log("Click is working");
-    getQuoteData();
-});
+getQuoteBtn.addEventListener('click', getQuoteData);
 
 
 //textBox.innerHTML = getQuoteData();
